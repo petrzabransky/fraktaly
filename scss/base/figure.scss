@@ -1,0 +1,38 @@
+@import "../core/variable.scss";
+.figure {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    &__border {
+        width: 100%;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $color-white;
+        margin-bottom: 32px;
+        &--clear {
+            border: none;
+            padding: 0;
+        }
+    }
+    &__img {
+        width: 100%;
+        border: 30px solid $color-black;
+        filter: grayscale(100);
+    }
+    &__caption {
+        font-size: 0.8rem;
+        display: block;
+        text-align: right;
+    }
+    &__content {
+        border: 30px solid $color-black;
+    }
+    @media(min-width: $breakpoint-laptop) {
+        &__img {
+            max-width: none;
+        }
+    }
+}

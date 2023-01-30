@@ -1,0 +1,73 @@
+@import "../core/variable.scss";
+.nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: $color-dark;
+    &__bar {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__menu {
+        flex-basis: 100%;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+    }
+    &__item {
+        padding: 16px 0;
+    }
+    &__link {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $color-medium;
+        letter-spacing: 0.2em;
+    }
+    &__active-link {
+        color: $color-white;
+        font-weight: bold;
+        &::before {
+            content: "";
+            background-color: $color-primary;
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            top: -30px;
+            left: 0;
+        }
+    }
+    &__icon {
+        height: 20px;
+        margin-top: 32px;
+    }
+    &__close {
+        display: none;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        &__bar {
+            justify-content: start;
+        }
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            flex-basis: initial;
+            max-height: 500px;
+        }
+        &__hamb,
+        &__close {
+            display: none;
+        }
+        &__item {
+            padding: 90px 64px 90px 0;
+        }
+    }
+}

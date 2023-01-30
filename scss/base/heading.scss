@@ -1,0 +1,49 @@
+@import "../core/variable.scss";
+.heading {
+    color: $color-white;
+    letter-spacing: 0.3em;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    &--display {
+        font-size: 2rem;
+        margin-bottom: 3em;
+    }
+    &--header {
+        font-size: 1.5rem;
+        margin-bottom: 3em;
+        margin-top: 64px;
+        position: relative;
+        &::before {
+            content: "";
+            background-color: $color-primary;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            top: -64px;
+            left: 0;
+        }
+    }
+    &--title {
+        font-size: 1.1rem;
+        letter-spacing: 0.2em;
+        margin-bottom: 2em;
+    }
+    &--subtitle {
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        margin-bottom: 2em;
+    }
+    &--label {
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
+        margin-bottom: 2em;
+    }
+    @media(min-width: $breakpoint-laptop) {
+        &--display {
+            font-size: 2.66rem;
+            margin-bottom: 3em;
+        }
+    }
+}

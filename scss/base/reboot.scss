@@ -1,0 +1,66 @@
+@import "../core/variable.scss";
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: font-primary;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 18px;
+    }
+}
+
+body {
+    background: $color-dark;
+    color: $color-medium;
+}
+
+header,
+main,
+footer,
+section,
+article,
+nav,
+img {
+    display: block;
+}
+
+img {
+    border-style: none;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-position: inside;
+    list-style: none;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+small {
+    font-size: 80%;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+table td:first-child {
+    padding-right: 5rem;
+}

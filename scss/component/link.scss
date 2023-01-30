@@ -1,0 +1,8 @@
+@import "../core/variable.scss";
+.link {
+    display: inline-block;
+    color: $color-primary-light;
+    &:hover {
+        opacity: 0.5;
+    }
+}

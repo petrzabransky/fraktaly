@@ -1,0 +1,12 @@
+@import "../core/variable.scss";
+.draw {
+    &__canvas {
+        background: $color-black;
+    }
+    &__label {
+        font-size: 12px;
+    }
+    &__parameter {
+        max-width: 300px;
+    }
+}
