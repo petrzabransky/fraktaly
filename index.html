@@ -1,259 +1,298 @@
 <!DOCTYPE html>
 <html lang="cs-cz">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Úžasné geometrické objekty můžeme najt i v přírodě" />
-    <meta name="keywords" content="fraktál, fraktály, matematika, geometrie, vzorce, příroda" />
 
-    <title>FRAKTÁLY | Geometrie v přírodě</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Úžasné geometrické objekty můžeme najt i v přírodě" />
+  <meta name="keywords" content="fraktál, fraktály, matematika, geometrie, vzorce, příroda" />
 
-    <link rel="stylesheet" href="/css/style.css?v=1675198507136" />
+<<<<<<< HEAD
+    <link rel="stylesheet" href="/css/style.css?v=1675198904800" />
   </head>
+=======
+  <title>FRAKTÁLY | Geometrie v přírodě</title>
+>>>>>>> develop
 
-  <body>
-    <header id="header" class="header">
-      <nav class="nav">
-        <div class="container">
-          <div class="nav__bar">
-            <img src="/img/ikona/hamburger.svg" alt="otevřít menu" class="nav__icon nav__hamb" />
-            <img src="/img/ikona/zavrit.svg" alt="zavřít menu" class="nav__icon nav__close" />
-            <ul class="nav__menu">
-              <li class="nav__item nav__active-item"><a href="#header" class="nav__link nav__active-link">home</a></li>
-              <li class="nav__item"><a href="#theory" class="nav__link">teorie</a></li>
-              <li class="nav__item"><a href="#generate" class="nav__link">generování</a></li>
-              <li class="nav__item"><a href="#gallery" class="nav__link">galerie</a></li>
-              <li class="nav__item"><a href="#contact" class="nav__link">kontakt</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="./css/style.css?v=1675198904800" />
+</head>
 
-    <main class="main">
-      <div class="intro">
-        <div class="container">
-          <div class="intro__panel">
-            <div class="intro__textbox">
-              <h1 class="intro__title heading heading--display">fraktály</h1>
-              <p class="intro__subtitle">
-                S matematickými vzorci se setkáváme nejen na počítači,<br />ale můžeme je pozorovat i v přírodě a vesmíru.<br />Jakoby celý svět také
-                někdo naprogramoval.
-              </p>
-            </div>
-            <figure class="intro__figure">
-              <img class="intro__img" src="/img/snehova-vlocka.jpg" alt="sněhová vločka pod mikroskopem" />
-              <figcaption class="intro__label">sněhová vločka</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
+<body>
+  <header id="header" class="header">
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__bar">
+          <img src="/img/ikona/hamburger.svg" alt="otevřít menu" class="nav__icon nav__hamb" />
+          <img src="/img/ikona/zavrit.svg" alt="zavřít menu" class="nav__icon nav__close" />
 
-      <section class="section" id="theory">
-        <div class="container">
-          <h2 class="heading heading--header">teorie fraktálů</h2>
-          <div class="grid grid--21">
-            <div>
-              <p>
-                Fraktály jsou fascinující geometrické objekty definované překvapivě jednoduchým matematickým vzorcem, který se při konstrukci do
-                nekonečna stále opakuje. Nejdříve vznikají jednoduché schématické obrazce, ale pokud do vzorce přidáme určitý prvek nahodilosti,
-                začnou nám vygenerované obrazce připomínat skutečné předměty a přírodní útvary.
-              </p>
-              <p>
-                Jeden z nejjednodušších typu fraktálů je například fraktálový strom. Větev, která se na konci rozvětví a takto rozvětvená větev se
-                dále větví stejným způsobem. Další jednoduché fraktály jsou třeba spirála nebo sněhová vločka. O něco málo složitější fraktály, jako
-                je třeba Mandelbrotova množina, nám potom připomínají vesmír a jeho galaxie.
-              </p>
-              <p>Na fraktálech je zajímavý i fakt, že při jakémkoli přiblížení uvidíme stále se opakující stejný motiv. Říkáme tomu soběpodobnost.</p>
-              <p>
-                Poznatků fraktálové geometrie se využívá v počítačové grafice k vytváření přírodní krajiny nebo simulování virtuální reality. Fraktály
-                však můžeme spatřit i ve skutečné přírodě. Kapradí, strom, brokolice, šnečí ulita, kámen nebo třeba sněhová vločka.
-              </p>
-            </div>
-            <div>
-              <figure class="figure">
-                <div class="figure__border">
-                  <img class="figure__img" src="/img/galerie/14.jpg" alt="fraktálová spirála" />
-                </div>
-                <figcaption class="figure__caption">Mandelbrotova množina</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <h2 class="heading heading--header">jak vznikají</h2>
-          <div class="grid grid--21 mb-5">
-            <div>
-              <h3 class="heading heading--title">fraktálový strom</h3>
-              <p>
-                Fraktálový strom vzniká větvením. Nejdříve se rozvětví hlavní větev a pak každá další a další větev se větví stejným způsobem.
-                Výsledný útvar ovlivní úhel větvení, počet větví, zkracování dalších větví nebo určitý prvek nahodilosti. Výsledkem pak můžou být
-                různé rostliny, kapradí, stromy nebo keře.
-              </p>
-            </div>
-
-            <figure class="figure">
-              <div class="figure__border">
-                <img class="figure__img" src="/img/strom-konstrukce.svg" alt="konstrukce fraktálového stromu" />
-              </div>
-              <figcaption class="figure__caption">konstrukce fraktálového stromu</figcaption>
-            </figure>
-          </div>
-
-          <div class="grid grid--21 grid--21-reverse mb-5">
-            <figure class="figure">
-              <div class="figure__border">
-                <img class="figure__img" src="/img/vlocka-konstrukce.svg" alt="konstrukce Kochovy vločky" />
-              </div>
-              <figcaption class="figure__caption">konstrukce Kochovy vločky</figcaption>
-            </figure>
-            <div>
-              <h3 class="heading heading--title">fraktálová vločka</h3>
-              <p>
-                Fraktálová vločka vzniká jednoduchým dělením. Jedna z nejznámnějších je například Kochova vločka. Základem je trojúhelník. Každá jeho
-                strana se rozdělí na třetiny a na prostřední třetině vznikne další trojúhleník. Na takto vzniklých trojúhelnících vznikají stejným
-                způsobem další a další trojúhelníky. Při různých modifikacích vzorce a postupu nám vznikají napřiklad krystaly nebo sněhové vločky.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section" id="generate">
-        <div class="container">
-          <h2 class="heading heading--header">generování fraktálů</h2>
-          <section class="subsection">
-            <h3 class="heading heading--title">fraktálový strom</h3>
-            <div class="grid grid--21 grid--21-reverse">
-              <figure class="figure">
-                <div class="figure__border">
-                  <canvas id="tree-canvas" class="draw__canvas" width="0" height="0"></canvas>
-                </div>
-                <figcaption class="figure__caption">generovaný obrázek</figcaption>
-              </figure>
-
-              <div class="draw__parameter">
-                <span class="draw__label">úhel větvení</span>
-                <input type="range" id="tree-angel" class="slider" min="0" max="90" value="25" />
-                <span class="draw__label">délka větve</span>
-                <input type="range" id="tree-length" class="slider" min="50" max="70" value="65" />
-                <span class="draw__label">náhodná odchylka</span>
-                <input type="range" id="tree-random" class="slider mb-5" min="0" max="20" value="8" />
-                <input type="button" id="tree-btn" class="button" value="původní hodnoty" />
-              </div>
-            </div>
-          </section>
-
-          <section class="subsection">
-            <h3 class="heading heading--title">spirála</h3>
-            <div class="grid grid--21 grid--21-reverse">
-              <figure class="figure">
-                <div class="figure__border">
-                  <canvas id="spiral-canvas" class="draw__canvas" width="0" height="0"></canvas>
-                </div>
-                <figcaption class="figure__caption">generovaný obrázek</figcaption>
-              </figure>
-
-              <div class="draw__parameter">
-                <span class="draw__label">úhel natočení</span>
-                <input type="range" id="spiral-angel" class="slider" min="0" max="30" value="2" />
-                <span class="draw__label">délka úsečky</span>
-                <input type="range" id="spiral-length" class="slider" min="70" max="99" value="99" />
-                <span class="draw__label">náhodná odchylka</span>
-                <input type="range" id="spiral-random" class="slider mb-5" min="0" max="5" value="0" />
-                <input type="button" id="spiral-btn" class="button" value="původní hodnoty" />
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <section class="section" id="gallery">
-        <div class="container">
-          <h2 class="heading heading--header">galerie</h2>
-          <div class="grid grid--gallery">
-            <img class="img img--gallery" src="/img/galerie/01.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/02.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/03.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/04.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/05.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/06.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/07.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/08.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/09.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/10.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/11.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/12.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/13.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/14.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/15.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/16.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/17.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/18.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/19.jpg" loading="lazy" alt="fraktál" />
-            <img class="img img--gallery" src="/img/galerie/20.jpg" loading="lazy" alt="fraktál" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="container">
-          <h2 class="heading heading--header">kontakt</h2>
-          <div class="grid grid--21">
-            <div>
-              <img class="img img--autor" src="/img/autor.jpg" alt="portrét petr zábranský" />
-              <p class="mb-3">
-                Projekt vznikl za účelem seznámení s fraktály jednoduchou a srozumitelnou formou. Uvítám jakékoli náměty nebo připomínky na toto téma.
-                Odborné poznatky i obyčejné úvahy k zamyšlení.
-              </p>
-              <p class="mb-3">
-                Petr Zábranský<br />
-                <i>autor projektu</i>
-              </p>
-
-              <a href="mailto:info@petrzabransky.cz" class="link">info@petrzabransky.cz</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer" id="footer">
-      <div class="container footer__container">
-        <div class="grid grid--31">
-          <div>
-            <a href="#header" class="footer__brand">fraktály</a>
-          </div>
-
-          <ul>
-            <li class="footer__item"><a href="#header" class="footer__link">home</a></li>
-            <li class="footer__item"><a href="#theory" class="footer__link">teorie</a></li>
-            <li class="footer__item"><a href="#generate" class="footer__link">generování</a></li>
-            <li class="footer__item"><a href="#gallery" class="footer__link">galerie</a></li>
-            <li class="footer__item"><a href="#contact" class="footer__link">kontakt</a></li>
+          <ul class="nav__menu">
+            <li class="nav__item nav__active-item"><a href="#header" class="nav__link nav__active-link">home</a></li>
+            <li class="nav__item"><a href="#theory" class="nav__link">teorie</a></li>
+            <li class="nav__item"><a href="#generate" class="nav__link">generování</a></li>
+            <li class="nav__item"><a href="#gallery" class="nav__link">galerie</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">kontakt</a></li>
           </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <main class="main">
+    <div class="intro">
+      <div class="container">
+        <div class="intro__panel">
+          <div class="intro__textbox">
+            <h1 class="intro__title heading heading--display">fraktály</h1>
+
+            <p class="intro__subtitle">
+              S matematickými vzorci se setkáváme nejen na počítači,<br />ale můžeme je pozorovat i v přírodě a vesmíru.<br />Jakoby celý svět také
+              někdo naprogramoval.
+            </p>
+          </div>
+          <figure class="intro__figure">
+            <img class="intro__img" src="/img/snehova-vlocka.jpg" alt="sněhová vločka pod mikroskopem" />
+
+            <figcaption class="intro__label">sněhová vločka</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="theory">
+      <div class="container">
+        <h2 class="heading heading--header">teorie fraktálů</h2>
+
+        <div class="grid grid--21">
           <div>
-            <ul>
-              <li class="footer__item">
-                <a href="mailto:info@petrzabransky.cz" class="footer__link">
-                  <img class="footer__icon" src="/img/ikona/mail.svg" alt="ikona email" />
-                  <span> info@petrzabransky.cz </span>
-                </a>
-              </li>
-            </ul>
+            <p>
+              Fraktály jsou fascinující geometrické objekty definované překvapivě jednoduchým matematickým vzorcem, který se při konstrukci do
+              nekonečna stále opakuje. Nejdříve vznikají jednoduché schématické obrazce, ale pokud do vzorce přidáme určitý prvek nahodilosti,
+              začnou nám vygenerované obrazce připomínat skutečné předměty a přírodní útvary.
+            </p>
+
+            <p>
+              Jeden z nejjednodušších typu fraktálů je například fraktálový strom. Větev, která se na konci rozvětví a takto rozvětvená větev se
+              dále větví stejným způsobem. Další jednoduché fraktály jsou třeba spirála nebo sněhová vločka. O něco málo složitější fraktály, jako
+              je třeba Mandelbrotova množina, nám potom připomínají vesmír a jeho galaxie.
+            </p>
+
+            <p>Na fraktálech je zajímavý i fakt, že při jakémkoli přiblížení uvidíme stále se opakující stejný motiv. Říkáme tomu soběpodobnost.</p>
+
+            <p>
+              Poznatků fraktálové geometrie se využívá v počítačové grafice k vytváření přírodní krajiny nebo simulování virtuální reality. Fraktály
+              však můžeme spatřit i ve skutečné přírodě. Kapradí, strom, brokolice, šnečí ulita, kámen nebo třeba sněhová vločka.
+            </p>
+          </div>
+          <div>
+            <figure class="figure">
+              <div class="figure__border">
+                <img class="figure__img" src="/img/galerie/14.jpg" alt="fraktálová spirála" />
+              </div>
+              <figcaption class="figure__caption">Mandelbrotova množina</figcaption>
+            </figure>
           </div>
         </div>
       </div>
-      <div class="footer__advertise">
-        <a href="https://www.webovna.cz" target="_BLANK" class="footer__advertise-link">2022 vyrobilo studio WEBOVNA</a>
-      </div>
-    </footer>
+    </section>
 
-    <script async src="/js/main.js?v=1675198507247"></script>
-    <script async src="/js/spiral.js ?v=1675198507247"></script>
-    <script async src="/js/tree.js ?v=1675198507247"></script>
+<<<<<<< HEAD
+    <script async src="/js/main.js?v=1675198904905"></script>
+    <script async src="/js/spiral.js ?v=1675198904905"></script>
+    <script async src="/js/tree.js ?v=1675198904905"></script>
   </body>
 </html>
+=======
+    <section class="section">
+      <div class="container">
+        <h2 class="heading heading--header">jak vznikají</h2>
+
+        <div class="grid grid--21 mb-5">
+          <div>
+            <h3 class="heading heading--title">fraktálový strom</h3>
+
+            <p>
+              Fraktálový strom vzniká větvením. Nejdříve se rozvětví hlavní větev a pak každá další a další větev se větví stejným způsobem.
+              Výsledný útvar ovlivní úhel větvení, počet větví, zkracování dalších větví nebo určitý prvek nahodilosti. Výsledkem pak můžou být
+              různé rostliny, kapradí, stromy nebo keře.
+            </p>
+          </div>
+
+          <figure class="figure">
+            <div class="figure__border">
+              <img class="figure__img" src="/img/strom-konstrukce.svg" alt="konstrukce fraktálového stromu" />
+            </div>
+
+            <figcaption class="figure__caption">konstrukce fraktálového stromu</figcaption>
+          </figure>
+        </div>
+
+        <div class="grid grid--21 grid--21-reverse mb-5">
+          <figure class="figure">
+            <div class="figure__border">
+              <img class="figure__img" src="/img/vlocka-konstrukce.svg" alt="konstrukce Kochovy vločky" />
+            </div>
+            <figcaption class="figure__caption">konstrukce Kochovy vločky</figcaption>
+          </figure>
+          <div>
+            <h3 class="heading heading--title">fraktálová vločka</h3>
+
+            <p>
+              Fraktálová vločka vzniká jednoduchým dělením. Jedna z nejznámnějších je například Kochova vločka. Základem je trojúhelník. Každá jeho
+              strana se rozdělí na třetiny a na prostřední třetině vznikne další trojúhleník. Na takto vzniklých trojúhelnících vznikají stejným
+              způsobem další a další trojúhelníky. Při různých modifikacích vzorce a postupu nám vznikají napřiklad krystaly nebo sněhové vločky.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="generate">
+      <div class="container">
+        <h2 class="heading heading--header">generování fraktálů</h2>
+
+        <section class="subsection">
+          <h3 class="heading heading--title">fraktálový strom</h3>
+
+          <div class="grid grid--21 grid--21-reverse">
+            <figure class="figure">
+              <div class="figure__border">
+                <canvas id="tree-canvas" class="draw__canvas" width="0" height="0"></canvas>
+              </div>
+              <figcaption class="figure__caption">generovaný obrázek</figcaption>
+            </figure>
+
+            <div class="draw__parameter">
+              <span class="draw__label">úhel větvení</span>
+              <input type="range" id="tree-angel" class="slider" min="0" max="90" value="25" />
+
+              <span class="draw__label">délka větve</span>
+              <input type="range" id="tree-length" class="slider" min="50" max="70" value="65" />
+
+              <span class="draw__label">náhodná odchylka</span>
+              <input type="range" id="tree-random" class="slider mb-5" min="0" max="20" value="8" />
+
+              <input type="button" id="tree-btn" class="button" value="původní hodnoty" />
+            </div>
+          </div>
+        </section>
+
+        <section class="subsection">
+          <h3 class="heading heading--title">spirála</h3>
+          <div class="grid grid--21 grid--21-reverse">
+            <figure class="figure">
+              <div class="figure__border">
+                <canvas id="spiral-canvas" class="draw__canvas" width="0" height="0"></canvas>
+              </div>
+              <figcaption class="figure__caption">generovaný obrázek</figcaption>
+            </figure>
+
+            <div class="draw__parameter">
+              <span class="draw__label">úhel natočení</span>
+              <input type="range" id="spiral-angel" class="slider" min="0" max="30" value="2" />
+
+              <span class="draw__label">délka úsečky</span>
+              <input type="range" id="spiral-length" class="slider" min="70" max="99" value="99" />
+
+              <span class="draw__label">náhodná odchylka</span>
+              <input type="range" id="spiral-random" class="slider mb-5" min="0" max="5" value="0" />
+
+              <input type="button" id="spiral-btn" class="button" value="původní hodnoty" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <h2 class="heading heading--header">galerie</h2>
+
+        <div class="grid grid--gallery">
+          <img class="img img--gallery" src="/img/galerie/01.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/02.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/03.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/04.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/05.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/06.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/07.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/08.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/09.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/10.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/11.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/12.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/13.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/14.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/15.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/16.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/17.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/18.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/19.jpg" loading="lazy" alt="fraktál" />
+          <img class="img img--gallery" src="/img/galerie/20.jpg" loading="lazy" alt="fraktál" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="heading heading--header">kontakt</h2>
+
+        <div class="grid grid--21">
+          <div>
+            <img class="img img--autor" src="/img/autor.jpg" alt="portrét petr zábranský" />
+
+            <p class="mb-3">
+              Projekt vznikl za účelem seznámení s fraktály jednoduchou a srozumitelnou formou. Uvítám jakékoli náměty nebo připomínky na toto téma.
+              Odborné poznatky i obyčejné úvahy k zamyšlení.
+            </p>
+
+            <p class="mb-3">
+              Petr Zábranský<br />
+              <i>autor projektu</i>
+            </p>
+
+            <a href="mailto:info@petrzabransky.cz" class="link">info@petrzabransky.cz</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer__container">
+      <div class="grid grid--31">
+        <div>
+          <a href="#header" class="footer__brand">fraktály</a>
+        </div>
+
+        <ul>
+          <li class="footer__item"><a href="#header" class="footer__link">home</a></li>
+          <li class="footer__item"><a href="#theory" class="footer__link">teorie</a></li>
+          <li class="footer__item"><a href="#generate" class="footer__link">generování</a></li>
+          <li class="footer__item"><a href="#gallery" class="footer__link">galerie</a></li>
+          <li class="footer__item"><a href="#contact" class="footer__link">kontakt</a></li>
+        </ul>
+
+        <div>
+          <ul>
+            <li class="footer__item">
+              <a href="mailto:info@petrzabransky.cz" class="footer__link">
+                <img class="footer__icon" src="/img/ikona/mail.svg" alt="ikona email" />
+                <span> info@petrzabransky.cz </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__advertise">
+      <a href="https://www.webovna.cz" target="_BLANK" class="footer__advertise-link">2023 copyright Petr Zábranský</a>
+    </div>
+  </footer>
+
+  <script async src="./js/main.js?v=1675198904905"></script>
+</body>
+
+</html>
+>>>>>>> develop

@@ -1,4 +1,5 @@
 @import "../core/variable.scss";
+
 *,
 *::before,
 *::after {
@@ -12,6 +13,8 @@ html {
     line-height: 1.8;
     letter-spacing: 0.05em;
     font-size: 16px;
+    scroll-behavior: smooth;
+
     @media (min-width: $breakpoint-desktop) {
         font-size: 18px;
     }
@@ -56,6 +59,7 @@ small {
 
 a {
     text-decoration: none;
+
     &:hover {
         opacity: 0.5;
     }
