@@ -7,6 +7,7 @@ const minify = require("gulp-minify");
 const version = require("gulp-version-number");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
+const replace = require('gulp-replace');
 
 
 //
@@ -56,6 +57,8 @@ const minifyHTML = () => {
     .src("./index.html")
     .pipe(version(versionCSSConfig))
     .pipe(version(versionJSConfig))
+    .pipe(replace("./css/style.css", "./css/style.min.css"))
+    .pipe(replace("./js/main.js", "./js/main.min.js"))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(`./_dist`));
 };

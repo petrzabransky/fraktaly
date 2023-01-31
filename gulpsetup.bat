@@ -6,3 +6,4 @@ call npm install gulp-minify --save-dev
 call npm install gulp-version-number --save-dev
 call npm install gulp-rename --save-dev
 call npm install gulp-htmlmin --save-dev
+call npm install gulp-replace --save-dev 
