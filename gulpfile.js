@@ -71,8 +71,13 @@ const minifyCSS = () => {
     .pipe(rename({ extname: ".min.css" }))
     .pipe(gulp.dest("./_dist/css"));
 };
+const copyImg = () => {
+  return gulp
+    .src("./img/**/*.*")
+    .pipe(gulp.dest("./_dist/img"));
+};
 
-exports.dist = gulp.series(minifyHTML, minifyJS, minifyCSS);
+exports.dist = gulp.series(minifyHTML, minifyJS, minifyCSS, copyImg);
 
 // //
 // // Watch events
