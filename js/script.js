@@ -1,5 +1,3 @@
-"use strict";
-
 // Components
 
 // Navigation menu
@@ -18,3 +16,4 @@ document.querySelector(".nav__hamburger").addEventListener("click", () => {
 
 // App
 new Fractal("spiral");
+new Tree("tree");

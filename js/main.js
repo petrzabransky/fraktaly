@@ -1,3 +1,20 @@
+"use strict";
+
+class Point {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  // Return new point define by angle and length
+  getPointByAngle(startAngle, angle, length) {
+    const x = Math.sin((startAngle + angle) * (3.14 / 180)) * length + this.x;
+    const y = Math.cos((startAngle + angle) * (3.14 / 180)) * length + this.y;
+
+    return new Point(x, y);
+  }
+}
+
 class Fractal {
   constructor(id) {
     this.id = id;
@@ -116,24 +133,17 @@ class Fractal {
   }
 }
 
-"use strict";
-
-class Point {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
+class Tree extends Fractal {
+  constructor(id) {
+    super(id);
   }
 
-  // Return new point define by angle and length
-  getPointByAngle(startAngle, angle, length) {
-    const x = Math.sin((startAngle + angle) * (3.14 / 180)) * length + this.x;
-    const y = Math.cos((startAngle + angle) * (3.14 / 180)) * length + this.y;
-
-    return new Point(x, y);
+  // Drawing fractal on canvas
+  draw() {
+    this.context.fillStyle = "#888";
+    this.context.fillRect(50, 50, 100, 100);
   }
 }
-
-"use strict";
 
 // Components
 
@@ -153,3 +163,4 @@ document.querySelector(".nav__hamburger").addEventListener("click", () => {
 
 // App
 new Fractal("spiral");
+new Tree("tree");
