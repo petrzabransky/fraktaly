@@ -1,4 +1,5 @@
 @import "../core/variable.scss";
+
 .nav {
     width: 100%;
     position: absolute;
@@ -6,8 +7,10 @@
     left: 0;
     display: flex;
     align-items: center;
-    background: $color-dark;
+    padding: 32px 0;
+
     &__bar {
+        // background: pink;
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -15,16 +18,25 @@
         justify-content: flex-end;
         align-items: center;
     }
+
     &__menu {
         flex-basis: 100%;
-        list-style: none;
         flex-direction: column;
         justify-content: center;
         display: none;
+
+        &--active {
+            display: flex;
+            background: $color-dark;
+            padding: 64px 0;
+        }
     }
+
     &__item {
+        text-align: center;
         padding: 16px 0;
     }
+
     &__link {
         position: relative;
         text-transform: uppercase;
@@ -32,9 +44,11 @@
         color: $color-medium;
         letter-spacing: 0.2em;
     }
+
     &__active-link {
         color: $color-white;
         font-weight: bold;
+
         &::before {
             content: "";
             background-color: $color-primary;
@@ -45,29 +59,28 @@
             left: 0;
         }
     }
+
     &__icon {
         height: 20px;
-        margin-top: 32px;
     }
-    &__close {
-        display: none;
-    }
+
     @media(min-width: $breakpoint-desktop) {
+        padding: 90px 0;
+
         &__bar {
-            justify-content: start;
+            justify-content: flex-start;
         }
+
         &__menu {
+            width: 50%;
             display: flex;
             flex-direction: row;
             flex-basis: initial;
-            max-height: 500px;
+            justify-content: space-between;
         }
-        &__hamb,
-        &__close {
+
+        &__hamburger {
             display: none;
-        }
-        &__item {
-            padding: 90px 64px 90px 0;
         }
     }
 }

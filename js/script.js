@@ -1,22 +1,15 @@
-window.onload = function () {
-    smoothScroll();
-    navMenu();
-}
+// Components
 
-function navMenu() {
-    const hamb = document.querySelector(".nav__hamb");
+// Navigation menu
+document.querySelector(".nav__hamburger").addEventListener("click", () => {
     const menu = document.querySelector(".nav__menu");
-    const close = document.querySelector(".nav__close");
+    const hamburger = document.querySelector(".nav__hamburger");
 
-    hamb.addEventListener("click", function () {
-        menu.style.display = "flex";
-        hamb.style.display = "none";
-        close.style.display = "block";
-    });
-
-    close.addEventListener("click", function () {
-        menu.style.display = "none";
-        hamb.style.display = "block";
-        close.style.display = "none";
-    });
-}
+    if (menu.classList.contains("nav__menu--active")) {
+        menu.classList.remove("nav__menu--active");
+        hamburger.src = "./img/ikony/hamburger.svg";
+    } else {
+        menu.classList.add("nav__menu--active");
+        hamburger.src = "./img/ikony/zavrit.svg";
+    }
+});

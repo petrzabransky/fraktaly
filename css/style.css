@@ -416,7 +416,7 @@ table td:first-child {
   left: 0;
   display: flex;
   align-items: center;
-  background: #141414;
+  padding: 32px 0;
 }
 .nav__bar {
   display: flex;
@@ -428,12 +428,17 @@ table td:first-child {
 }
 .nav__menu {
   flex-basis: 100%;
-  list-style: none;
   flex-direction: column;
   justify-content: center;
   display: none;
 }
+.nav__menu--active {
+  display: flex;
+  background: #141414;
+  padding: 64px 0;
+}
 .nav__item {
+  text-align: center;
   padding: 16px 0;
 }
 .nav__link {
@@ -458,26 +463,23 @@ table td:first-child {
 }
 .nav__icon {
   height: 20px;
-  margin-top: 32px;
-}
-.nav__close {
-  display: none;
 }
 @media (min-width: 1440px) {
+  .nav {
+    padding: 90px 0;
+  }
   .nav__bar {
-    justify-content: start;
+    justify-content: flex-start;
   }
   .nav__menu {
+    width: 50%;
     display: flex;
     flex-direction: row;
     flex-basis: initial;
-    max-height: 500px;
+    justify-content: space-between;
   }
-  .nav__hamb, .nav__close {
+  .nav__hamburger {
     display: none;
-  }
-  .nav__item {
-    padding: 90px 64px 90px 0;
   }
 }
 
