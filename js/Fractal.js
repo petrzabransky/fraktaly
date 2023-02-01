@@ -61,12 +61,12 @@ class Fractal {
     this.inpAngle.max = "40";
     this.inpAngle.value = "10";
 
-    this.inpLength.min = "10";
+    this.inpLength.min = "30";
     this.inpLength.max = "90";
     this.inpLength.value = "80";
 
     this.inpRandom.min = "0";
-    this.inpRandom.max = "200";
+    this.inpRandom.max = "100";
     this.inpRandom.value = "0";
   }
 
@@ -81,8 +81,7 @@ class Fractal {
   // Returns value adjusted for random variance
   randomize(num) {
     let inp = parseInt(this.inpRandom.value);
-    let rnd = 1 + (Math.random() * inp) / 100;
-
+    let rnd = 1 - (Math.random() * inp) / 100;
     return num * rnd;
   }
 
