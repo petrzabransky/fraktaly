@@ -80,7 +80,7 @@ const copyImg = () => {
 
 const copyRoot = () => {
   return gulp
-    .src(".htaccess")
+    .src(".htaccess", "favicon.ico")
     .pipe(gulp.dest("./_dist/"));
 };
 
