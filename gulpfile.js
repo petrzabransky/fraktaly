@@ -84,7 +84,13 @@ const copyRoot = () => {
     .pipe(gulp.dest("./_dist/"));
 };
 
-exports.dist = gulp.series(minifyHTML, minifyJS, minifyCSS, copyImg, copyRoot);
+const copyFont = () => {
+  return gulp
+    .src("./css/font/*.*")
+    .pipe(gulp.dest("./_dist/css/font"));
+};
+
+exports.dist = gulp.series(minifyHTML, minifyJS, minifyCSS, copyImg, copyRoot, copyFont);
 
 // //
 // // Watch events
