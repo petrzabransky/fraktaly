@@ -90,9 +90,9 @@ const versionCSSWatch = () => {
 };
 
 // Update version number of linked files .JS in index.html
-const versionJSWatch = () => {
-  return gulp.src("./index.html").pipe(version(versionJSConfig)).pipe(gulp.dest("./"));
-};
+// const versionJSWatch = () => {
+//   return gulp.src("./index.html").pipe(version(versionJSConfig)).pipe(gulp.dest("./"));
+// };
 
 // Build CSS from SCSS
 const buildCssWatch = () => {
@@ -114,7 +114,7 @@ const buildJSWatch = () => {
 
 gulp.task("watch", () => {
   // Watching style.scss for update
-  gulp.watch("./scss/**/*.scss", gulp.series(versionCSSWatch, buildCssWatch));
+  gulp.watch("./scss/**/*.scss", gulp.series(buildCssWatch));
   // Watching *.js for update
-  gulp.watch(["./js/*.js", "!./js/main.js"], gulp.series(versionJSWatch, buildJSWatch));
+  gulp.watch(["./js/*.js", "!./js/main.js"], gulp.series(buildJSWatch));
 });
