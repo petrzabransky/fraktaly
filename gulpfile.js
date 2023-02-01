@@ -71,13 +71,20 @@ const minifyCSS = () => {
     .pipe(rename({ extname: ".min.css" }))
     .pipe(gulp.dest("./_dist/css"));
 };
+
 const copyImg = () => {
   return gulp
     .src("./img/**/*.*")
     .pipe(gulp.dest("./_dist/img"));
 };
 
-exports.dist = gulp.series(minifyHTML, minifyJS, minifyCSS, copyImg);
+const copyRoot = () => {
+  return gulp
+    .src([".htaccess", "browserconfig.xml", "favicon.ico", "site.webmanifest"])
+    .pipe(gulp.dest("./_dist/"));
+};
+
+exports.dist = gulp.series(minifyHTML, minifyJS, minifyCSS, copyImg, copyRoot);
 
 // //
 // // Watch events
