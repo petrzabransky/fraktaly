@@ -17,7 +17,7 @@ const replace = require('gulp-replace');
 // Minify JS
 const minifyJS = () => {
   return gulp
-    .src(["./js/*.js", "!./js/*.min.js", "!./js/main.js"])
+    .src(["./js/Point.js", "./js/Fractal.js", "./js/Tree.js", "./js/script.js"])
     .pipe(concat("main.js"))
     .pipe(
       minify({
@@ -120,7 +120,8 @@ const buildCssWatch = () => {
 // Build JS
 const buildJSWatch = () => {
   return gulp
-    .src(["./js/*.js", "!./js/main.js"])
+    // .src(["./js/*.js", "!./js/main.js"])
+    .src(["./js/Point.js", "./js/Fractal.js", "./js/Tree.js", "./js/script.js"])
     .pipe(concat("main.js"))
     .pipe(gulp.dest(`./js`));
 };
