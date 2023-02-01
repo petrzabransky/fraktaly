@@ -80,7 +80,7 @@ const copyImg = () => {
 
 const copyRoot = () => {
   return gulp
-    .src([".htaccess", "browserconfig.xml", "favicon.ico", "site.webmanifest"])
+    .src(".htaccess")
     .pipe(gulp.dest("./_dist/"));
 };
 
