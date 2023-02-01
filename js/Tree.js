@@ -9,12 +9,12 @@ class Tree extends Fractal {
     this.inpAngle.max = "90";
     this.inpAngle.value = "30";
 
-    this.inpLength.min = "10";
+    this.inpLength.min = "50";
     this.inpLength.max = "70";
-    this.inpLength.value = "60";
+    this.inpLength.value = "65";
 
     this.inpRandom.min = "0";
-    this.inpRandom.max = "50";
+    this.inpRandom.max = "30";
     this.inpRandom.value = "20";
   }
 
@@ -25,11 +25,12 @@ class Tree extends Fractal {
       // Draw line on canvas
       this.context.beginPath();
       this.context.strokeStyle = "#fff";
+      this.context.lineWidth = lenA / 15;
       this.context.moveTo(r1.x, r1.y);
       this.context.lineTo(r2.x, r2.y);
       this.context.stroke();
 
-      if (lenA < 2) return;
+      if (lenA < 1) return;
 
       else {
         line(r2, angA + angR, this.randomize(angR), lenA * this.randomize(lengthCoef));
@@ -50,6 +51,7 @@ class Tree extends Fractal {
     // Draw root
     this.context.beginPath();
     this.context.strokeStyle = "#fff";
+    this.context.lineWidth = lengthActual / 15;
     this.context.moveTo(p1.x, p1.y);
     this.context.lineTo(p2.x, p2.y);
     this.context.stroke();

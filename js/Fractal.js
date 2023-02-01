@@ -81,7 +81,7 @@ class Fractal {
   // Returns value adjusted for random variance
   randomize(num) {
     let inp = parseInt(this.inpRandom.value);
-    let rnd = 1 - (Math.random() * inp) / 100;
+    let rnd = 1 + ((Math.random() * (2 * inp)) - inp) / 100;
     return num * rnd;
   }
 
@@ -102,6 +102,7 @@ class Fractal {
       // Draw line on canvas
       this.context.beginPath();
       this.context.strokeStyle = "#fff";
+      this.context.lineWidth = lengthActual / 5;
       this.context.moveTo(p1.x, p1.y);
       this.context.lineTo(p2.x, p2.y);
       this.context.closePath();

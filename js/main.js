@@ -98,7 +98,7 @@ class Fractal {
   // Returns value adjusted for random variance
   randomize(num) {
     let inp = parseInt(this.inpRandom.value);
-    let rnd = 1 - (Math.random() * inp) / 100;
+    let rnd = 1 + ((Math.random() * (2 * inp)) - inp) / 100;
     return num * rnd;
   }
 
@@ -119,6 +119,7 @@ class Fractal {
       // Draw line on canvas
       this.context.beginPath();
       this.context.strokeStyle = "#fff";
+      this.context.lineWidth = lengthActual / 5;
       this.context.moveTo(p1.x, p1.y);
       this.context.lineTo(p2.x, p2.y);
       this.context.closePath();
@@ -143,12 +144,12 @@ class Tree extends Fractal {
     this.inpAngle.max = "90";
     this.inpAngle.value = "30";
 
-    this.inpLength.min = "10";
+    this.inpLength.min = "50";
     this.inpLength.max = "70";
-    this.inpLength.value = "60";
+    this.inpLength.value = "65";
 
     this.inpRandom.min = "0";
-    this.inpRandom.max = "50";
+    this.inpRandom.max = "30";
     this.inpRandom.value = "20";
   }
 
@@ -159,11 +160,12 @@ class Tree extends Fractal {
       // Draw line on canvas
       this.context.beginPath();
       this.context.strokeStyle = "#fff";
+      this.context.lineWidth = lenA / 15;
       this.context.moveTo(r1.x, r1.y);
       this.context.lineTo(r2.x, r2.y);
       this.context.stroke();
 
-      if (lenA < 2) return;
+      if (lenA < 1) return;
 
       else {
         line(r2, angA + angR, this.randomize(angR), lenA * this.randomize(lengthCoef));
@@ -184,6 +186,7 @@ class Tree extends Fractal {
     // Draw root
     this.context.beginPath();
     this.context.strokeStyle = "#fff";
+    this.context.lineWidth = lengthActual / 15;
     this.context.moveTo(p1.x, p1.y);
     this.context.lineTo(p2.x, p2.y);
     this.context.stroke();
@@ -192,6 +195,9 @@ class Tree extends Fractal {
 
     line(p1, angleActual, this.randomize(angleOfRotation), this.randomize(lengthActual));
     line(p1, angleActual, this.randomize(-angleOfRotation), this.randomize(lengthActual));
+
+
+
   }
 }
 
@@ -200,16 +206,16 @@ class Tree extends Fractal {
 
 // Navigation menu
 document.querySelector(".nav__hamburger").addEventListener("click", () => {
-  const menu = document.querySelector(".nav__menu");
-  const hamburger = document.querySelector(".nav__hamburger");
+    const menu = document.querySelector(".nav__menu");
+    const hamburger = document.querySelector(".nav__hamburger");
 
-  if (menu.classList.contains("nav__menu--active")) {
-    menu.classList.remove("nav__menu--active");
-    hamburger.src = "./img/ikony/hamburger.svg";
-  } else {
-    menu.classList.add("nav__menu--active");
-    hamburger.src = "./img/ikony/zavrit.svg";
-  }
+    if (menu.classList.contains("nav__menu--active")) {
+        menu.classList.remove("nav__menu--active");
+        hamburger.src = "./img/ikony/hamburger.svg";
+    } else {
+        menu.classList.add("nav__menu--active");
+        hamburger.src = "./img/ikony/zavrit.svg";
+    }
 });
 
 // App
