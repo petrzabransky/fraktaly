@@ -1,3 +1,5 @@
+"use strict";
+
 // Components
 
 // Navigation menu
@@ -13,3 +15,6 @@ document.querySelector(".nav__hamburger").addEventListener("click", () => {
         hamburger.src = "./img/ikony/zavrit.svg";
     }
 });
+
+// App
+new Fractal("spiral");
