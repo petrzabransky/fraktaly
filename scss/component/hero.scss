@@ -1,6 +1,6 @@
 @import "../core/variable.scss";
 
-.intro {
+.hero {
     width: 100vw;
     height: 100vh;
     min-height: 700px;
@@ -50,8 +50,6 @@
     &__title {
         margin-bottom: 3rem;
     }
-
-    &__subtitle {}
 
     @media (min-width: $breakpoint-desktop) {
         &__title {

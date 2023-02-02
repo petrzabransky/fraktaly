@@ -1,5 +1,6 @@
 // Core 
 @import "core/variable.scss";
+
 // Base
 @import "base/font.scss";
 @import "base/reboot.scss";
@@ -7,26 +8,25 @@
 @import "base/table.scss";
 @import "base/img.scss";
 @import "base/figure.scss";
+
 // Layout 
 @import "layout/main.scss";
 @import "layout/header.scss";
 @import "layout/footer.scss";
 @import "layout/section-article.scss";
 @import "layout/grid.scss";
+
 // Component
-@import "component/intro.scss";
+@import "component/hero.scss";
 @import "component/nav.scss";
 @import "component/button.scss";
 @import "component/link.scss";
 @import "component/fractal.scss";
 @import "component/slider.scss";
-// @import "component/card.scss";
-// @import "component/collapse.scss";
+
 // Utilities
 @import "utility/align.scss";
 @import "utility/display.scss";
 @import "utility/display.scss";
 @import "utility/margin-padding.scss";
 @import "utility/width-height.scss";
-// Helpers
-@import "helper/helper.scss";

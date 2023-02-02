@@ -336,7 +336,7 @@ table td:first-child {
   }
 }
 
-.intro {
+.hero {
   width: 100vw;
   height: 100vh;
   min-height: 700px;
@@ -344,7 +344,7 @@ table td:first-child {
   align-items: center;
   justify-content: center;
 }
-.intro__panel {
+.hero__panel {
   display: grid;
   grid-gap: 64px;
   grid-template-columns: 1fr;
@@ -354,7 +354,7 @@ table td:first-child {
   justify-items: center;
   grid-template-areas: "figure" "text";
 }
-.intro__textbox {
+.hero__textbox {
   width: 75%;
   grid-area: text;
   display: flex;
@@ -362,47 +362,47 @@ table td:first-child {
   flex-direction: column;
   text-align: center;
 }
-.intro__figure {
+.hero__figure {
   grid-area: figure;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.intro__img {
+.hero__img {
   margin-bottom: 16px;
   width: 250px;
 }
-.intro__label {
+.hero__label {
   display: none;
   text-align: right;
   font-size: 0.8rem;
 }
-.intro__title {
+.hero__title {
   margin-bottom: 3rem;
 }
 @media (min-width: 1440px) {
-  .intro__title {
+  .hero__title {
     margin-bottom: 2rem;
   }
-  .intro__img {
+  .hero__img {
     width: 100%;
   }
-  .intro__panel {
+  .hero__panel {
     grid-template-columns: 4fr 3fr;
     grid-template-areas: "text figure";
     margin-top: 100px;
     justify-items: start;
   }
-  .intro__label {
+  .hero__label {
     display: block;
   }
-  .intro__textbox {
+  .hero__textbox {
     grid-area: text;
     justify-content: center;
     text-align: left;
   }
-  .intro__figure {
+  .hero__figure {
     grid-area: figure;
     justify-content: start;
     align-items: end;
@@ -654,12 +654,4 @@ table td:first-child {
 
 .w-max-800-px {
   max-width: 800px;
-}
-
-.pink {
-  background: pink;
-}
-
-.blue {
-  background: lightblue;
 }
