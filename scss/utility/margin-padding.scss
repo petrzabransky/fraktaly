@@ -1,7 +1,8 @@
 @import "../core/variable.scss";
-.p-0 {
-    padding: 0;
-}
+
+//
+// Margin
+//
 
 .m-0 {
     margin: 0;
@@ -34,6 +35,15 @@
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
+}
+
+
+//
+// Padding
+//
+
+.p-0 {
+    padding: 0;
 }
 
 .pr-3 {

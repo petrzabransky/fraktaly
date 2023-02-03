@@ -5,7 +5,6 @@
 @import "base/font.scss";
 @import "base/reboot.scss";
 @import "base/heading.scss";
-@import "base/table.scss";
 @import "base/img.scss";
 @import "base/figure.scss";
 
@@ -13,7 +12,7 @@
 @import "layout/main.scss";
 @import "layout/header.scss";
 @import "layout/footer.scss";
-@import "layout/section-article.scss";
+@import "layout/section.scss";
 @import "layout/grid.scss";
 
 // Component
@@ -26,7 +25,6 @@
 
 // Utilities
 @import "utility/align.scss";
-@import "utility/display.scss";
 @import "utility/display.scss";
 @import "utility/margin-padding.scss";
 @import "utility/width-height.scss";

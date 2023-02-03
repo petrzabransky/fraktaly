@@ -1,14 +1,18 @@
 @import "../core/variable.scss";
+
 .footer {
     padding: 0;
+
     &__container {
         border-top: 1px solid $color-medium;
         padding-top: 3rem;
     }
+
     &__item {
         display: flex;
         align-items: center;
     }
+
     &__link {
         display: flex;
         align-items: center;
@@ -19,12 +23,14 @@
         letter-spacing: 0.2em;
         margin-bottom: 1.5em;
     }
+
     &__brand {
         text-transform: uppercase;
         font-size: 16px;
         color: $color-medium;
         letter-spacing: 0.2em;
     }
+
     &__phone {
         display: block;
         text-align: left;
@@ -33,12 +39,14 @@
         letter-spacing: 0.2em;
         margin-bottom: 2em;
     }
+
     &__icon {
         height: 14px;
         display: inline-block;
         margin: 0 16px 0 0;
         opacity: 0.5;
     }
+
     &__advertise {
         background: $color-black;
         padding: 32px;
@@ -46,6 +54,7 @@
         width: 100%;
         text-align: center;
     }
+
     &__advertise-link {
         color: $color-medium;
         font-size: 12px;

@@ -1,7 +1,5 @@
 @import "../core/variable.scss";
-.text-center {
-    text-align: center;
-}
+
 
 .text-left {
     text-align: left;
@@ -9,6 +7,10 @@
 
 .text-right {
     text-align: right;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .text-justify {

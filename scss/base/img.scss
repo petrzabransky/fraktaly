@@ -1,9 +1,12 @@
         @import "../core/variable.scss";
+
         .img {
             width: 100%;
+
             &--gallery {
                 border: 2px solid $color-white;
             }
+
             &--autor {
                 width: 150px;
                 margin-bottom: 3rem;
