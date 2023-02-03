@@ -24,8 +24,6 @@ class Fractal {
 
   setCanvasSize() {
     // Seting canvas size on value of his parent element
-    // this.canvas.width = 200;
-    // this.canvas.height = 200;
     this.canvas.width = this.box.clientWidth;
     this.canvas.height = this.box.clientWidth;
   }

@@ -1,4 +1,6 @@
+//
 // Components
+//
 
 // Navigation menu
 document.querySelector(".nav__hamburger").addEventListener("click", () => {
@@ -14,6 +16,10 @@ document.querySelector(".nav__hamburger").addEventListener("click", () => {
     }
 });
 
-// App
+
+//
+// Start app
+//
+
 new Fractal("spiral");
 new Tree("tree");

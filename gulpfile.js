@@ -17,7 +17,7 @@ const replace = require('gulp-replace');
 // Minify JS
 const minifyJS = () => {
   return gulp
-    .src(["./js/Point.js", "./js/Fractal.js", "./js/Tree.js", "./js/script.js"])
+    .src(["./js/Point.js", "./js/Fractal.js", "./js/Tree.js", "./js/app.js"])
     .pipe(concat("main.js"))
     .pipe(
       minify({
@@ -105,7 +105,7 @@ const versionCSSWatch = () => {
 // Update version number of linked files .JS in index.html
 // const versionJSWatch = () => {
 //   return gulp.src("./index.html").pipe(version(versionJSConfig)).pipe(gulp.dest("./"));
-// };
+// 
 
 // Build CSS from SCSS
 const buildCssWatch = () => {
@@ -121,7 +121,7 @@ const buildCssWatch = () => {
 const buildJSWatch = () => {
   return gulp
     // .src(["./js/*.js", "!./js/main.js"])
-    .src(["./js/Point.js", "./js/Fractal.js", "./js/Tree.js", "./js/script.js"])
+    .src(["./js/Point.js", "./js/Fractal.js", "./js/Tree.js", "./js/app.js"])
     .pipe(concat("main.js"))
     .pipe(gulp.dest(`./js`));
 };
