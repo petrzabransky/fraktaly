@@ -1,3 +1,6 @@
+call npm install --global gulp-cli
+call npm init
+
 call npm install gulp --save-dev 
 call npm install sass --save-dev 
 call npm install gulp-sass --save-dev 
