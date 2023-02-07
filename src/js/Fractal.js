@@ -72,8 +72,6 @@ class Fractal {
     this.setCanvasSize();
     this.setElementParameters();
     this.setEvents();
-
-    console.log(this.element.clientWidth);
   }
 
   // Returns value adjusted for random variance
