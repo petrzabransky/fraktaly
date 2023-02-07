@@ -111,3 +111,5 @@ class Fractal {
     }
   }
 }
+
+export default class { Fractal };

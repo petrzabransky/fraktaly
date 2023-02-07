@@ -63,3 +63,5 @@ class Tree extends Fractal {
   }
 }
 
+export class Tree;
+

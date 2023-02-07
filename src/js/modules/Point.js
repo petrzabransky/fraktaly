@@ -14,3 +14,5 @@ class Point {
     return new Point(x, y);
   }
 }
+
+export default { getPointByAngle };
