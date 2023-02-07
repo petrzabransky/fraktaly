@@ -1,13 +1,20 @@
 "use strict";
 
-const { src, dest, series, parallel } = require("gulp");
+const gulp = require("gulp");
+const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
 
-const distCSS = (cb) => {
-  console.log("Distribution...");
+const buildCss = (cb) => {
+  return gulp.src('./src/scss/style.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./src/css'));
   cb();
-}
+};
 
-exports.dist = series(distCSS);
+exports.default = () => {
+  gulp.watch("src/scss/**/*.scss", buildCss);
+};
 
 
 /*
@@ -23,7 +30,6 @@ distVersion
 
 WATCH
 
-watchCss
-watchJs
+buildCss
 
 */
