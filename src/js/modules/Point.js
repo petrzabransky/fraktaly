@@ -1,6 +1,6 @@
 "use strict";
 
-class Point {
+export class Point {
   constructor(x, y) {
     this.x = x;
     this.y = y;
@@ -14,3 +14,4 @@ class Point {
     return new Point(x, y);
   }
 }
+

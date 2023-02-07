@@ -1,4 +1,6 @@
-class Fractal {
+import { Point } from "./Point.js";
+
+export class Fractal {
   constructor(id) {
     this.id = id;
 
@@ -111,3 +113,4 @@ class Fractal {
     }
   }
 }
+
