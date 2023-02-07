@@ -3,6 +3,8 @@ call npm init
 
 call npm install gulp --save-dev 
 call npm install sass --save-dev 
+call npm install gulp-sourcemaps --save-dev
+
 call npm install gulp-sass --save-dev 
 call npm install gulp-concat --save-dev
 call npm install gulp-minify --save-dev
