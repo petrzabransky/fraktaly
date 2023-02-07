@@ -1,7 +1,7 @@
-import { getPointByAngle } from "/modules/Point.js";
-import { Fractal } from "/modules/Fractal.js";
-import { Tree } from "/modules/Tree.js";
+"use strict";
 
+import { Fractal } from "./modules/Fractal.js";
+import { Tree } from "./modules/Tree.js";
 
 //
 // Components
@@ -26,5 +26,5 @@ document.querySelector(".nav__hamburger").addEventListener("click", () => {
 // Start app
 //
 
-const fractal = new Fractal("spiral");
-const tree = new Tree("tree");
+new Fractal("spiral");
+new Tree("tree");

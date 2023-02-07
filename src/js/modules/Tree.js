@@ -1,4 +1,7 @@
-class Tree extends Fractal {
+import { Point } from "./Point.js";
+import { Fractal } from "./Fractal.js";
+
+export class Tree extends Fractal {
   constructor(id) {
     super(id);
   }
@@ -63,5 +66,4 @@ class Tree extends Fractal {
   }
 }
 
-export class Tree;
 
