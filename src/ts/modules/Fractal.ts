@@ -1,7 +1,17 @@
-import { Point } from "./Point.js";
+import { Point } from "./Point";
 
 export class Fractal {
-  constructor(id) {
+  protected id: string;
+  protected element: any;
+  protected box: any;
+  protected inpLength: any;
+  protected inpAngle: any;
+  protected inpRandom: any;
+  protected btnReset: any;
+  protected canvas: any;
+  protected context: any;
+
+  public constructor(id: string) {
     this.id = id;
 
     this.element = document.getElementById(this.id); //Root element of Component
@@ -77,7 +87,7 @@ export class Fractal {
   }
 
   // Returns value adjusted for random variance
-  randomize(num) {
+  randomize(num: number) {
     let inp = parseInt(this.inpRandom.value);
     let rnd = 1 + ((Math.random() * (2 * inp)) - inp) / 100;
     return num * rnd;

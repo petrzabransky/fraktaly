@@ -1,10 +1,11 @@
-import { Point } from "./Point.js";
-import { Fractal } from "./Fractal.js";
+import { Point } from "./Point";
+import { Fractal } from "./Fractal";
 
 export class Tree extends Fractal {
-  constructor(id) {
+  public constructor(id: string) {
     super(id);
   }
+
 
   // Seting parameters of sliders
   setElementParameters() {
@@ -23,7 +24,7 @@ export class Tree extends Fractal {
 
   // Drawing fractal on canvas
   draw() {
-    const line = (r1, angA, angR, lenA) => { // Start point, actual angle, angle of rotation, actual length
+    const line = (r1: Point, angA: number, angR: number, lenA: number) => { // Start point, actual angle, angle of rotation, actual length
       let r2 = r1.getPointByAngle(angA, angR, lenA); // End point of line
       // Drawing line on canvas
       this.context.beginPath();
