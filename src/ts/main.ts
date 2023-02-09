@@ -21,7 +21,6 @@ document.querySelector(".nav__hamburger").addEventListener("click", () => {
 	}
 });
 
-
 //
 // Start app
 //

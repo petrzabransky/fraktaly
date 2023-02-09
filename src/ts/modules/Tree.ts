@@ -1,5 +1,5 @@
-import { Point } from "./Point";
-import { Fractal } from "./Fractal";
+import { Point } from "./Point.js";
+import { Fractal } from "./Fractal.js";
 
 export class Tree extends Fractal {
   public constructor(id: string) {
