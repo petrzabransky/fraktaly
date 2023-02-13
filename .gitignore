@@ -3,4 +3,6 @@ _design/
 
 node_modules/
 
-package-lock.json
+*.json
+!package.json
+!tsconfig.json
