@@ -57,10 +57,10 @@ module.exports = {
 
 		new CopyPlugin({
 			patterns: [
-				//{
-				//	from: "src/*.txt",
-				//	to: path.resolve(__dirname, "dist", "[name].[ext]"),
-				//},
+				{
+					from: "src/*.ico",
+					to: path.resolve(__dirname, "dist", "[name].[ext]"),
+				},
 
 				{
 					from: "src/scss/font/*.*",
