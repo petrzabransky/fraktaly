@@ -1,7 +1,7 @@
 "use strict";
 
-import { Fractal } from "./modules/Fractal.js";
-import { Tree } from "./modules/Tree.js";
+import { Fractal } from "./modules/Fractal";
+import { Tree } from "./modules/Tree";
 
 //
 // Components
