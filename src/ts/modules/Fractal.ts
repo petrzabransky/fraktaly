@@ -1,5 +1,17 @@
-class Fractal {
-  constructor(id) {
+import { Point } from "./Point";
+
+export class Fractal {
+  protected id: string;
+  protected element: any;
+  protected box: any;
+  protected inpLength: any;
+  protected inpAngle: any;
+  protected inpRandom: any;
+  protected btnReset: any;
+  protected canvas: any;
+  protected context: any;
+
+  public constructor(id: string) {
     this.id = id;
 
     this.element = document.getElementById(this.id); //Root element of Component
@@ -72,12 +84,10 @@ class Fractal {
     this.setCanvasSize();
     this.setElementParameters();
     this.setEvents();
-
-    console.log(this.element.clientWidth);
   }
 
   // Returns value adjusted for random variance
-  randomize(num) {
+  randomize(num: number) {
     let inp = parseInt(this.inpRandom.value);
     let rnd = 1 + ((Math.random() * (2 * inp)) - inp) / 100;
     return num * rnd;
@@ -113,3 +123,4 @@ class Fractal {
     }
   }
 }
+

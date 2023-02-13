@@ -1,6 +1,7 @@
+design/
 _design/
-_dist/
 
+dist/
 node_modules/
 
 *.json
