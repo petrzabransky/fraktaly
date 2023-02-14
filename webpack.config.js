@@ -5,7 +5,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 
 module.exports = {
-	watch: false,
+	watch: true,
 	mode: "production",
 	entry: ["./src/ts/index.ts", "./src/scss/style.scss"],
 	output: {
@@ -59,12 +59,12 @@ module.exports = {
 			patterns: [
 				{
 					from: "src/*.ico",
-					to: path.resolve(__dirname, "dist", "[name].[ext]"),
+					to: path.resolve(__dirname, "dist", "[name][ext]"),
 				},
 
 				{
 					from: "src/scss/font/*.*",
-					to: path.resolve(__dirname, "dist/css/font", "[name].[ext]"),
+					to: path.resolve(__dirname, "dist/css/font", "[name][ext]"),
 				}
 			],
 		}),
