@@ -6,9 +6,8 @@ export class Tree extends Fractal {
     super(id);
   }
 
-
   // Seting parameters of sliders
-  setElementParameters() {
+  setElementParameters(): void {
     this.inpAngle.min = "0";
     this.inpAngle.max = "90";
     this.inpAngle.value = "30";
@@ -23,9 +22,9 @@ export class Tree extends Fractal {
   }
 
   // Drawing fractal on canvas
-  draw() {
-    const line = (r1: Point, angA: number, angR: number, lenA: number) => { // Start point, actual angle, angle of rotation, actual length
-      let r2 = r1.getPointByAngle(angA, angR, lenA); // End point of line
+  draw(): void {
+    const line = (r1: Point, angA: number, angR: number, lenA: number): void => { // Start point, actual angle, angle of rotation, actual length
+      let r2: Point = r1.getPointByAngle(angA, angR, lenA); // End point of line
       // Drawing line on canvas
       this.context.beginPath();
       this.context.strokeStyle = "#fff";
@@ -45,12 +44,12 @@ export class Tree extends Fractal {
 
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);  // Cleaning canvas on start drawing
 
-    let angleActual = 180; // Angle of actual line 0 - down, 90 - right
-    let angleOfRotation = parseInt(this.inpAngle.value); // Angle of rotation next line
-    let lengthActual = this.canvas.height / 6; // Length of actual line. Begin % from canvas height.
-    let lengthCoef = (parseInt(this.inpLength.value)) / 100;
-    let p1 = new Point(this.canvas.width / 2, this.canvas.height * 0.9); // Start point of line
-    let p2 = p1.getPointByAngle(angleActual, 0, lengthActual);  // End point of line
+    let angleActual: number = 180; // Angle of actual line 0 - down, 90 - right
+    let angleOfRotation: number = parseInt(this.inpAngle.value); // Angle of rotation next line
+    let lengthActual: number = this.canvas.height / 6; // Length of actual line. Begin % from canvas height.
+    let lengthCoef: number = (parseInt(this.inpLength.value)) / 100;
+    let p1: Point = new Point(this.canvas.width / 2, this.canvas.height * 0.9); // Start point of line
+    let p2: Point = p1.getPointByAngle(angleActual, 0, lengthActual);  // End point of line
 
     // Draw root
     this.context.beginPath();

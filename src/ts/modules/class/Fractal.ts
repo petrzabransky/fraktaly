@@ -2,14 +2,14 @@ import { Point } from "./Point";
 
 export class Fractal {
   protected id: string;
-  protected element: any;
-  protected box: any;
-  protected inpLength: any;
-  protected inpAngle: any;
-  protected inpRandom: any;
-  protected btnReset: any;
-  protected canvas: any;
-  protected context: any;
+  protected element: HTMLElement;
+  protected box: HTMLDivElement;
+  protected inpLength: HTMLInputElement;
+  protected inpAngle: HTMLInputElement;
+  protected inpRandom: HTMLInputElement;
+  protected btnReset: HTMLInputElement;
+  protected canvas: HTMLCanvasElement;
+  protected context: CanvasRenderingContext2D;
 
   public constructor(id: string) {
     this.id = id;
@@ -34,13 +34,13 @@ export class Fractal {
     this.draw(); // Draw fractal on canvas
   }
 
-  setCanvasSize() {
+  setCanvasSize(): void {
     // Seting canvas size on value of his parent element
     this.canvas.width = this.box.clientWidth;
     this.canvas.height = this.box.clientWidth;
   }
 
-  setEvents() {
+  setEvents(): void {
     // Redraw fractal after change value on sliders
     this.inpAngle.addEventListener("input", () => {
       this.draw();
@@ -65,7 +65,7 @@ export class Fractal {
     });
   }
 
-  setElementParameters() {
+  setElementParameters(): void {
     // Seting parameters of sliders
     this.inpAngle.min = "0";
     this.inpAngle.max = "40";
@@ -80,32 +80,32 @@ export class Fractal {
     this.inpRandom.value = "0";
   }
 
-  init() {
+  init(): void {
     this.setCanvasSize();
     this.setElementParameters();
     this.setEvents();
   }
 
   // Returns value adjusted for random variance
-  randomize(num: number) {
-    let inp = parseInt(this.inpRandom.value);
-    let rnd = 1 + ((Math.random() * (2 * inp)) - inp) / 100;
+  randomize(num: number): number {
+    let inp: number = parseInt(this.inpRandom.value);
+    let rnd: number = 1 + ((Math.random() * (2 * inp)) - inp) / 100;
     return num * rnd;
   }
 
   // Drawing fractal on canvas
-  draw() {
+  draw(): void {
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-    let angleActual = 180; // Angle of actual line 0 - down, 90 - right
-    let angleOfRotation = parseInt(this.inpAngle.value); // Angle of rotation next line
-    let lengthActual = this.canvas.height / 20; // Length of actual line. Begin % from canvas height.
-    let lengthCoef = (parseInt(this.inpLength.value) / 10 + 90) / 100; // Length coefficient. E.g. 0.9. Next line will be long 0.9 x last line. Input is 10-90, coef will be 0.90-0.99.
+    let angleActual: number = 180; // Angle of actual line 0 - down, 90 - right
+    let angleOfRotation: number = parseInt(this.inpAngle.value); // Angle of rotation next line
+    let lengthActual: number = this.canvas.height / 20; // Length of actual line. Begin % from canvas height.
+    let lengthCoef: number = (parseInt(this.inpLength.value) / 10 + 90) / 100; // Length coefficient. E.g. 0.9. Next line will be long 0.9 x last line. Input is 10-90, coef will be 0.90-0.99.
 
-    let p1 = new Point(30, this.canvas.height * 0.6); // Start point of line
+    let p1: Point = new Point(30, this.canvas.height * 0.6); // Start point of line
 
     while (lengthActual > 1) {
-      let p2 = p1.getPointByAngle(angleActual, -this.randomize(angleOfRotation), this.randomize(lengthActual)); // End point of line
+      let p2: Point = p1.getPointByAngle(angleActual, -this.randomize(angleOfRotation), this.randomize(lengthActual)); // End point of line
 
       // Draw line on canvas
       this.context.beginPath();
