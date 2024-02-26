@@ -2,10 +2,7 @@ design/
 _design/
 
 dist/
+
 node_modules/
 .vscode/
 
-*.json
-
-!package.json
-!tsconfig.json
