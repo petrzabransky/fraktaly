@@ -1,5 +1,5 @@
 # FRAKTÁLY
-<br>
+
 [www.fraktaly.cz](https://www.fraktaly.cz)<br><br>
 
 ![fraktaly.cz](./src/img/fraktaly-titul.png)<br>
@@ -11,4 +11,4 @@ Základní fraktály si můžete zkusit i sami vygenerovat.<br>
 <br>
 
 
-[2024 Vyrobilo studio WEBOVNA](http://www.marelen.cz)<br>
+[2024 Vyrobilo studio WEBOVNA](http://www.webovna.cz)<br>
